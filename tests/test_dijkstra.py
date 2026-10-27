@@ -8,6 +8,7 @@ def test_picks_cheaper_route():
         {"from": 0, "to": 2, "weight": 1, "blocked": False},
         {"from": 2, "to": 4, "weight": 4, "blocked": False},
         {"from": 1, "to": 4, "weight": 1, "blocked": False},
+        {"from": 1, "to": 4, "weight": 2, "blocked": False},
     ]
     result = dijkstra(nodes, edges, 0, 4)
     assert result["reachable"] is True
